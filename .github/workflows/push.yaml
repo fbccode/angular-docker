@@ -2,7 +2,7 @@ name: deploy
 on:
   push:
     branches:
-      - develop  # o ajusta a tu rama
+      - testJC  # o ajusta a tu rama
 jobs:
   push_to_registry:
     environment: dockerhub
