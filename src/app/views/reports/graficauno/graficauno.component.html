@@ -16,9 +16,9 @@
     </div>
   </div>
 <br/>
-<button class="btn btn-sm btn-outline-light active" style="float: right;" (click)="generarPDFGrafica()">Descargar gráficos</button>
+<div class="align-items-right"><button class="btn btn-sm btn-outline-light active"  (click)="generarPDFGrafica()">Descargar gráficos</button></div>
 <div #pdfGrafic id="pdfGrafic">
-  <div class="p-3" *ngFor="let performanceChart of reportList; let i = index">    
+  <div *ngFor="let performanceChart of reportList; let i = index">    
     <!-- end card-title-->  
     <div class="alert alert-info mt-3 text text-truncate mb-0" role="alert">
       {{performanceChart.title}}

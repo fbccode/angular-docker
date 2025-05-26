@@ -3,11 +3,24 @@
 .apexcharts-legend{
     top: auto !important;
     overflow:hidden !important;
-    background: red;
+    position:relative !important;
+    row-gap: 12px;
+    left:0 !important;
   }
 
-  .apex-charts div{min-height: initial !important;}
+    .apexcharts-tooltip{
+    position:absolute !important;
+  }
+
+  .apex-charts div{
+    min-height: initial !important;   
+    height:auto !important;    
+  }
 
 .margin-table-top{
     margin-top: 20px;
 }
+.align-items-right{
+  text-align:right;
+}
+
