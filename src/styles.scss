@@ -3,7 +3,10 @@
 .apexcharts-legend{
     top: auto !important;
     overflow:hidden !important;
+
   }
+
+  .apex-charts div{min-height: initial !important;}
 
 .margin-table-top{
     margin-top: 20px;
