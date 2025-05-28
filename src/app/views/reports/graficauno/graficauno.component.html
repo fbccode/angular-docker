@@ -1,24 +1,20 @@
-<div class="d-flex justify-content-between align-items-center">
-    <h4 class="card-title">{{mesActual}}</h4>
+<div class="btnDownloadContainer"><button class="btn btn-sm btn-outline-light active btnDownload"  (click)="generarPDFGrafica()">Descargar gráficos</button></div>
+<div #pdfGrafic id="pdfGrafic">
+  <div class="container my-4 headerContent">
+  <div class="d-flex justify-content-between align-items-center">        
     <div>
-      <button type="button" [ngClass]="getClassesByType('GRAF1_365')" (click)="reloadfilterByDate('365')">
-        1AÑO
-      </button>
-      <button type="button" [ngClass]="getClassesByType('GRAF1_30')" (click)="reloadfilterByDate('30')">
-        30DIAS
-      </button>
-      <button type="button" [ngClass]="getClassesByType('GRAF1_15')" (click)="reloadfilterByDate('15')">
-        15DIAS
-      </button>
-      <button type="button" [ngClass]="getClassesByType('GRAF1_7')" (click)="reloadfilterByDate('7')">
-        7DIAS
-      </button>
+      <img src="assets/images/izzipost-logo.png" alt="Izzipost" width="150">
+    </div>
+    <div>
+      <a href="https://izzi.post/" target="_blank" class="fs-4 text-decoration-none text-primary txtHeader">
+        https://izzi.post/
+      </a>
     </div>
   </div>
 <br/>
-<button class="btn btn-sm btn-outline-light active" style="float: right;" (click)="generarPDFGrafica()">Descargar gráficos</button>
+<div class="align-items-right"><button class="btn btn-sm btn-outline-light active"  (click)="generarPDFGrafica()">Descargar gráficos</button></div>
 <div #pdfGrafic id="pdfGrafic">
-  <div class="p-3" *ngFor="let performanceChart of reportList; let i = index">    
+  <div *ngFor="let performanceChart of reportList; let i = index">    
     <!-- end card-title-->  
     <div class="alert alert-info mt-3 text text-truncate mb-0" role="alert">
       {{performanceChart.title}}

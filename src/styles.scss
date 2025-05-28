@@ -1,9 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
-
 .apexcharts-legend{
     top: auto !important;
+    overflow:hidden !important;
+    position:relative !important;
+    row-gap: 12px;
+    left:0 !important;
+  }
+
+    .apexcharts-tooltip{
+    position:absolute !important;
+  }
+
+  .apex-charts div{
+    min-height: initial !important;   
+    height:auto !important;    
   }
 
 .margin-table-top{
-    margin-top: 20px;
+  margin-top: 20px;
+  top: auto !important;
+  overflow:hidden !important;
+  position:relative !important;
+  row-gap: 12px;
+  left:0 !important;
+  padding: 20px 0 !important;
+  }
+.apexcharts-tooltip{
+  position:absolute !important;
+  }
+.apex-charts div{
+  min-height: initial !important;   
+  height:auto !important;    
+}
+.margin-table-top{
+  margin-top: 20px;
+}
+.align-items-right{
+  text-align:right;
+}
+.text-truncate{
+  background:none !important;
+  font-weight:bold;
+  padding-left:0;
+  padding-right:0;
+  color:#231f20;
+}
+.apex-charts{
+  background: #FFF;
+}
+.btnDownload{
+  background-image: url('../src/assets/images/icons/flecha.png');
+  background-repeat: no-repeat;
+  background-position:7px center;
+  background-size:18px;
+  padding-left:30px;
+}
+.btnDownload.btn.active{
+  background-color:#00c1f3;
+  color:#FFF;
+  border:#00c1f3;
+}
+.btnDownload:hover {
+  background-color: #02a0c7 !important;
+  border-color: #02a0c7 !important;
+  color: #FFFFFF !important;
+}
+
+.txtHeader{
+  color:#999 !important;
+  font-size:1em !important;
+}
+.pt-sm-5{
+  padding-top:0 !important;
+}
+.headerContent{
+  padding:0 !important;
+}
+.card-title{
+  color: #FFF;
+  background: #231f20;
+  border-radius: 0.2rem;
+  padding: 6px 10px;
+  font-size:0.7875rem;
+}
+.topContent{
+  border-bottom:solid 1px #ededed;
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+.btnMes .btn.active {
+  border: solid 1px #00c1f3;
+  font-weight:600;
+}
+.mt-3{
+  margin-top: inherit !important;
+}
+.btnDownloadContainer{
+  position:fixed;
+  bottom:0;
+  right:0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index:999;
+  margin:20px;
+}
+.btnMes button{
+  background:#FFF;
+  margin-right: 0.3125rem !important;
+}
+.apexcharts-bar-series path{
+  stroke:initial !important;
+}
+.apexcharts-legend-text{
+  font-size:0.7875rem !important;  
+}
+
+.table{
+  background:#FFF;
+}
+
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 960px !important;
+    }
 }
