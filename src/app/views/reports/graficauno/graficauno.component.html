@@ -11,8 +11,24 @@
       </a>
     </div>
   </div>
-<br/>
-<div class="align-items-right"><button class="btn btn-sm btn-outline-light active"  (click)="generarPDFGrafica()">Descargar gráficos</button></div>
+</div>
+<div class="d-flex justify-content-between align-items-center topContent">
+    <h4 class="card-title">{{mesActual}}</h4>
+    <div class="btnMes">
+      <button type="button" [ngClass]="getClassesByType('GRAF1_365')" (click)="reloadfilterByDate('365')">
+        1 AÑO
+      </button>
+      <button type="button" [ngClass]="getClassesByType('GRAF1_30')" (click)="reloadfilterByDate('30')">
+        30 DIAS
+      </button>
+      <button type="button" [ngClass]="getClassesByType('GRAF1_15')" (click)="reloadfilterByDate('15')">
+        15 DIAS
+      </button>
+      <button type="button" [ngClass]="getClassesByType('GRAF1_7')" (click)="reloadfilterByDate('7')">
+        7 DIAS
+      </button>
+    </div>
+  </div>
 <div #pdfGrafic id="pdfGrafic">
   <div *ngFor="let performanceChart of reportList; let i = index">    
     <!-- end card-title-->  
