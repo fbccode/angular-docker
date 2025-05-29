@@ -618,7 +618,7 @@ export class GaficaUnoComponent {
   generarPDFGrafica() {
     var hoy = new Date();
     const options = {
-      margin:       0.5,
+      margin:       0.3,
       filename:     this.getNamePdf() + '.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },

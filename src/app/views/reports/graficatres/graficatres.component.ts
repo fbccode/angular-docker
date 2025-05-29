@@ -142,7 +142,7 @@ export class GaficaTresComponent {
   }
   generarPDFGrafica() {
     const options = {
-      margin:       0.5,
+      margin:       0.3,
       filename:     'reporte.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
@@ -155,7 +155,7 @@ export class GaficaTresComponent {
   generarPDFMedicamentos() {
     var hoy = new Date();
     const options = {
-      margin:       0.5,
+      margin:       0.3,
       filename:     this.getNamePdf() + '.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
@@ -167,7 +167,7 @@ export class GaficaTresComponent {
   }
   generarPDFComentarios() {
     const options = {
-      margin:       0.5,
+      margin:       0.3,
       filename:     this.getNamePdf() + '.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },

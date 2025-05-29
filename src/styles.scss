@@ -32,6 +32,7 @@
 .apex-charts div{
   min-height: initial !important;   
   height:auto !important;    
+  text-align: center;
 }
 .margin-table-top{
   margin-top: 20px;
@@ -118,9 +119,23 @@
 .table{
   background:#FFF;
 }
+.apex-charts .apexcharts-canvas{
+  width:100% !important;  
+}
+
+.apex-charts svg{
+  margin:auto;
+  text-align: center;
+}
 
 @media (min-width: 1200px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 960px !important;
+        max-width: 720px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 720px !important;
     }
 }
