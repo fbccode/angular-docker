@@ -1,23 +1,35 @@
-<div class="d-flex justify-content-between align-items-center">
-    <h4 class="card-title">{{mesActual}}</h4>
+ <div class="container my-4 headerContent">
+  <div class="d-flex justify-content-between align-items-center">        
     <div>
+      <img src="assets/images/izzipost-logo.png" alt="Izzipost" width="150">
+    </div>
+    <div>
+      <a href="https://izzi.post/" target="_blank" class="fs-4 text-decoration-none text-primary txtHeader">
+        https://izzi.post/
+      </a>
+    </div>
+  </div>
+</div>  
+<div class="d-flex justify-content-between align-items-center topContent">
+    <h4 class="card-title">{{mesActual}}</h4>
+    <div class="btnMes">
       <button type="button" [ngClass]="getClassesByType('GRAF1_365')" (click)="reloadfilterByDate('365')">
-        1AÑO
+        1 AÑO
       </button>
       <button type="button" [ngClass]="getClassesByType('GRAF1_30')" (click)="reloadfilterByDate('30')">
-        30DIAS
+        30 DIAS
       </button>
       <button type="button" [ngClass]="getClassesByType('GRAF1_15')" (click)="reloadfilterByDate('15')">
-        15DIAS
+        15 DIAS
       </button>
       <button type="button" [ngClass]="getClassesByType('GRAF1_7')" (click)="reloadfilterByDate('7')">
-        7DIAS
+        7 DIAS
       </button>
     </div>
   </div>
 <br/>
   <div dir="ltr">
-    <button class="btn btn-sm btn-outline-light active" style="float: right;" (click)="generarPDFMedicamentos()">Descargar medicamentos</button>
+    <button class="btn btn-sm btn-outline-light active btnDownload" style="float: right;" (click)="generarPDFMedicamentos()">Descargar medicamentos</button>
     <br/>
     <div class="table-responsive margin-table-top" #pdfMedicamentos id="pdfMedicamentos">
           <table class="table table-hover table-centered">
@@ -44,7 +56,7 @@
   </div>
   <br/>
   <div dir="ltr">
-    <button class="btn btn-sm btn-outline-light active" style="float: right;" (click)="generarPDFComentarios()">Descargar comentarios</button>
+    <button class="btn btn-sm btn-outline-light active btnDownload" style="float: right;" (click)="generarPDFComentarios()">Descargar comentarios</button>
     <br/>
     <div class="table-responsive margin-table-top" #pdfComentarios id="pdfComentarios">
           <table class="table table-hover table-centered">

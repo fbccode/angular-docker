@@ -618,11 +618,11 @@ export class GaficaUnoComponent {
   generarPDFGrafica() {
     var hoy = new Date();
     const options = {
-      margin:       0.5,
+      margin:       0.3,
       filename:     this.getNamePdf() + '.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
-      jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }//portrait
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }//portrait
     };
 
     const content = this.pdfGrafic.nativeElement;

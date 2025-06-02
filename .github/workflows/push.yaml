@@ -2,7 +2,7 @@ name: deploy
 on:
   push:
     branches:
-      - master  # o ajusta a tu rama
+      - develop  # o ajusta a tu rama
 jobs:
   push_to_registry:
     environment: dockerhub
@@ -33,7 +33,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: firstbuffalo/angular:v1.0.7.20 
+          tags: firstbuffalo/angular:v1.0.7.32 
           build-args: |
            configuration=production
           #tags: ${{ steps.meta.outputs.tags }}
@@ -53,7 +53,7 @@ jobs:
         uses: steebchen/kubectl@v2.1.1
         with:
          config: ${{secrets.KUBE_CONFIG_DATA}}
-         command: set image --record deployment/my-app container=firstbuffalo/angular:v1.0.7.20
+         command: set image --record deployment/my-app container=firstbuffalo/angular:v1.0.7.32
 
 
 
